@@ -1,0 +1,17 @@
+Name: Find pairs
+descroption: A post API which takes input(numbers: int[], taregt: int) as input and returns pair of indices whose sum matches the target.
+Type: POST
+URL: http://<server_ip>:<port>/find-pairs
+        eg . http://127.0.0.1:5000/find-pairs
+
+payload:
+{
+  "numbers": [1, 2, 3, 4, 5],
+  "target": 6
+}
+
+response:
+[[0,4], [1,3]]
+
+200 -> Success
+400 -> Bad request 
